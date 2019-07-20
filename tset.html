@@ -1,0 +1,31 @@
+<style>
+	.dropdown-wrap {
+		position: relative;
+	}
+	
+	.dropdown {
+		position: absolute;
+		display: none;
+		top: 100%;
+		
+		padding: 10px;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		background: #fff;
+	}
+	
+	.dropdown-wrap.show .dropdown {
+		display: block;
+	}
+</style>
+
+<div class="dropdown-wrap">
+	<button type="button" onclick="this.parentNode.classList.toggle('show')">Open</button>
+
+	<div class="dropdown">
+		Hello
+	</div>
+</div>
+Hello, World!
+
+position : sticky 도 찾아보자
